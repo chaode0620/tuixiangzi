@@ -6,14 +6,15 @@ body { background-color: #e6f7ff; }
 .item { display: flex;justify-content: center;align-items: center; border: 1px solid #fff; transition: all .3s; float: left;}
 .item:before{ display: inline-block; color:#fff; font-size:14px; text-shadow: 1px 1px 3px #000; opacity: .3; }
 
-.rw { background-color: cornflowerblue; } /* 人物 */
-.rw:before{ content: '人物'; }
-.qb { background-color: #434343; } /* 墙壁 */
-.qb:before{ content: '墙壁'; }
+
 .hs { background-color: #597ef7; } /* 河水 */
 .hs:before{ content: '河水'; }
-.goal { border-radius: 50%; background-color: #eb2f96; } /* 河水 */
+.goal{ border-radius: 50%; background-color: #eb2f96; } /* 河水 */
 .goal:before{ content: '目标'; }
+.qb { background-color: #434343; } /* 墙壁 */
+.qb:before{ content: '墙壁'; }
+.goal.rw, .rw { background-color: cornflowerblue; border-radius: 0; } /* 人物 */
+.goal.rw:before, .rw:before{ content: '人物'; }
 .goal.xz,.xz { background-color: #ad4e00; border-radius: 0; }  /* 箱子 */
 .goal.xz:before,.xz:before{ content: '箱子'; }
 
